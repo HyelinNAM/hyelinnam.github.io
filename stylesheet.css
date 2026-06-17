@@ -125,6 +125,10 @@ h2 {
   justify-content: center;
 }
 
+#sierpinskicam_img {
+  transform: translateY(-8px);
+}
+
 #sierpinskicam_img img,
 #cameo_img img {
   display: block;
