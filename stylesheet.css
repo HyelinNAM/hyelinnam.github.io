@@ -109,6 +109,15 @@ h2 {
   font-size: 32px;
 }
 
+.umich-gradient {
+  color: #00274c;
+  font-weight: 700;
+  background: linear-gradient(90deg, #00274c 0%, #1d4f91 28%, #ffcb05 72%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .one {
   width: 160px;
   height: 160px;
