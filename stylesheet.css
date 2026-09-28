@@ -112,7 +112,9 @@ h2 {
 .umich-gradient {
   color: #00274c;
   font-weight: 700;
-  background: linear-gradient(90deg, #00274c 0%, #1d4f91 28%, #ffcb05 72%);
+  /* Navy -> blue -> deep maize; darker gold end keeps "Michigan" readable on white */
+  background: linear-gradient(90deg, #00274c 0%, #1d4f91 30%, #f2b705 70%, #ffcb05 100%);
+  background: linear-gradient(90deg in oklab, #00274c 0%, #1d4f91 30%, #f2b705 70%, #ffcb05 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -153,6 +155,129 @@ h2 {
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
   -webkit-transition: opacity .2s ease-in-out;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/* Intro: temporary "open to" note */
+.open-to {
+  padding: 8px 12px;
+  border-left: 3px solid #ffcb05;
+  background: #fffbea;
+}
+
+/* News */
+.news-list {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+}
+
+.news-list li {
+  display: flex;
+  gap: 16px;
+  padding: 5px 0;
+  line-height: 1.5;
+}
+
+.news-date {
+  flex: 0 0 48px;
+  color: #777;
+  font-variant-numeric: tabular-nums;
+}
+
+.news-text {
+  flex: 1;
+}
+
+.news-emoji {
+  flex: 0 0 auto;
+  cursor: default;
+}
+
+.news-icon {
+  width: 1.1em;
+  height: 1.1em;
+  border-radius: 3px;
+  vertical-align: -0.15em;
+}
+
+.news-toggle {
+  margin-top: 6px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #1772d0;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.news-toggle:hover {
+  color: #f09228;
+}
+
+/* Publications header + Selected/All tabs */
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.pub-tabs {
+  display: inline-flex;
+  padding: 3px;
+  border-radius: 999px;
+  background: #f0f0f0;
+}
+
+.pub-tab {
+  padding: 4px 14px;
+  border: 0;
+  border-radius: 999px;
+  background: none;
+  color: #666;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.pub-tab.active {
+  background: #fff;
+  color: #222;
+  font-weight: 700;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .12);
+}
+
+/* Fixed columns so Selected/All filtering doesn't shift the text column */
+.pub-table {
+  table-layout: fixed;
+}
+
+/* Center figures in the image column (overrides the fixed 160px box) */
+.pub-table .one {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pub-table .two {
+  position: static;
+  width: auto;
+  height: auto;
+  transform: none !important;
+}
+
+.pub-table .two img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 !important;
 }
 
 span.highlight {

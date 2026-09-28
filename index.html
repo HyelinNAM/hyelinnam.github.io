@@ -33,9 +33,11 @@
 
                   <p>I'm a PhD Student in <a href="https://cse.engin.umich.edu/">Computer Science and Engineering</a> at the <span class="umich-gradient">University of Michigan</span>, where I'm advised by Prof. <a href="https://jjparkcv.github.io/">JJ Park</a>. Before that, I completed my master's at <a href="https://gsai.kaist.ac.kr/">KAIST</a>, where I was advised by Prof. <a href="https://bispl.weebly.com/">Jong Chul Ye</a>.</p>
 
-                  <p>Recently, I have worked on <b>video diffusion models</b>, exploiting their <b>controllability</b> to better capture <b>physically plausible dynamics</b> in generated videos. Moving forward, I am interested in extending these models toward <b>world modeling</b> and broader science-driven applications, including <b>robotics</b>.</p>
+                  <p>I am interested in <b>video generative models</b> and <b>world models</b>, exploiting their <b>controllability</b> to better capture <b>physically plausible dynamics</b> in generated videos.</p>
 
-                  <p style="text-align:center"><a href="mailto:hyelinam@umich.edu">Email</a> &nbsp;/&nbsp; <a href="https://drive.google.com/file/d/1kIF2W9jxzf6elyEjvM48fJ7Sq2UEMev9/view?usp=drive_link">CV</a> &nbsp;/&nbsp; <a href="https://www.linkedin.com/in/hyelin-nam/">LinkedIn</a> &nbsp;/&nbsp; <a href="https://scholar.google.com/citations?user=k6nzq08AAAAJ&amp;hl=en">Scholar</a> &nbsp;/&nbsp; <a href="https://github.com/HyelinNAM">Github</a> &nbsp;&nbsp; <!-- <a href="https://comlini8-8.tistory.com/">Blog (Korean)</a> --></p>
+                  <p class="open-to">I am open to <b>research internships for Summer 2027</b> and <b>collaborations</b>. Feel free to reach out!</p>
+
+                  <p style="text-align:center"><a href="mailto:hyelinam@umich.edu">Email</a> &nbsp;/&nbsp; <a href="https://www.linkedin.com/in/hyelin-nam/">LinkedIn</a> &nbsp;/&nbsp; <a href="https://scholar.google.com/citations?user=k6nzq08AAAAJ&amp;hl=en">Scholar</a> &nbsp;/&nbsp; <a href="https://github.com/HyelinNAM">Github</a> &nbsp;&nbsp; <!-- <a href="https://comlini8-8.tistory.com/">Blog (Korean)</a> --></p>
                 </td>
 
                 <td style="padding:2.5%;width:40%;max-width:40%"><a href="images/hyelin.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/hyelin.jpg" class="hoverZoomLink"></a></td>
@@ -47,9 +49,19 @@
             <tbody>
               <tr>
                 <td style="padding:16px;width:100%;vertical-align:middle">
-                  <h2>Research</h2><!-- <p>
-                  I'm interested in computer vision, deep learning, generative AI, and image processing. Most of my research is about inferring the physical world (shape, motion, color, light, etc) from images, usually with radiance fields. Some papers are <span class="highlight">highlighted</span>.
-                </p> -->
+                  <h2>News</h2>
+                  <!-- Newest first. Wrap text in <span class="news-text">; optional venue emoji <span class="news-emoji" title="City"> right after the venue name. Only the first 5 items are shown; the rest go behind the toggle automatically. -->
+                  <ul class="news-list" id="news-list">
+                    <li><span class="news-date">Sep '26</span> <span class="news-text">SierpinskiCam is accepted to <b>NeurIPS 2026</b> <span class="news-emoji" title="Sydney, Australia">🦘</span></span></li>
+                    <li><span class="news-date">Aug '26</span> <span class="news-text">Cameo is accepted to <b>BMVC 2026</b> <span class="news-emoji" title="Lancaster, UK">🏰</span></span></li>
+                    <li><span class="news-date">Mar '26</span> <span class="news-text">Video Parallel Scaling is accepted to <b>CVPR 2026 Findings</b> <span class="news-emoji" title="Denver, USA">🏔️</span></span></li>
+                    <li><span class="news-date">Aug '25</span> <span class="news-text">Started my PhD at the <b>University of Michigan</b> <img class="news-icon" src="images/news/umich.png" alt="University of Michigan" title="Ann Arbor, USA"></span></li>
+                    <li><span class="news-date">Jun '25</span> <span class="news-text">VideoRFSplat and SteerX are accepted to <b>ICCV 2025</b> <span class="news-emoji" title="Honolulu, USA">🌺</span></span></li>
+                    <li><span class="news-date">Feb '25</span> <span class="news-text">MotionPrompt is accepted to <b>CVPR 2025</b> <span class="news-emoji" title="Nashville, USA">🎸</span></span></li>
+                    <li><span class="news-date">Jan '25</span> <span class="news-text">CFG++ is accepted to <b>ICLR 2025</b> <span class="news-emoji" title="Singapore">🦁</span></span></li>
+                    <li><span class="news-date">Feb '24</span> <span class="news-text">CDS is accepted to <b>CVPR 2024</b> <span class="news-emoji" title="Seattle, USA">☕</span></span></li>
+                  </ul>
+                  <button class="news-toggle" id="news-toggle" type="button" hidden>Show more</button>
                 </td>
               </tr>
             </tbody>
@@ -57,7 +69,24 @@
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
-              <tr style="background-color: #ffffff;">
+              <tr>
+                <td style="padding:16px;width:100%;vertical-align:middle">
+                  <div class="section-header">
+                    <h2>Publications</h2>
+                    <div class="pub-tabs" role="tablist">
+                      <button type="button" class="pub-tab active" data-filter="selected">Selected</button>
+                      <button type="button" class="pub-tab" data-filter="all">All</button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="pub-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <colgroup><col style="width:230px"><col></colgroup>
+            <tbody>
+              <tr class="pub" data-selected="true">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='sierpinskicam_img'>
@@ -76,7 +105,7 @@
                 </td>
               </tr>
 
-              <tr style="background-color: #ffffff;">
+              <tr class="pub" data-selected="false">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='cameo_img'>
@@ -95,7 +124,7 @@
                 </td>
               </tr>
 
-              <tr style="background-color: #ffffff;">
+              <tr class="pub" data-selected="false">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='vps_img'>
@@ -114,7 +143,7 @@
                 </td>
               </tr>
 
-              <tr style="background-color: #ffffff;">
+              <tr class="pub" data-selected="false">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='videorfsplat_img'>
@@ -133,7 +162,7 @@
                 </td>
               </tr>
 
-              <tr style="background-color: #ffffff;">
+              <tr class="pub" data-selected="false">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='steerx_img'>
@@ -153,7 +182,7 @@
                 </td>
               </tr>
 
-              <tr style="background-color: #ffffff;">
+              <tr class="pub" data-selected="true">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='motionprompt_gif'>
@@ -172,7 +201,7 @@
                 </td>
               </tr>
 
-              <tr style="background-color: #ffffff;">
+              <tr class="pub" data-selected="true">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='cfgpp_img'>
@@ -192,7 +221,7 @@
                 </td>
               </tr>
 
-              <tr style="background-color: #ffffff;">
+              <tr class="pub" data-selected="true">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='cds_main'>
@@ -211,8 +240,8 @@
                 </td>
               </tr>
 
-              <tr style="background-color: #ffffff;">
-                <td style="padding:25px;width:25%;vertical-align:middle">
+              <tr class="pub" data-selected="false">
+                <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='hairfit_main'>
                       <img src='images/hairfit_main.png' width="180" style="margin-top: 13px" alt="HairFIT teaser">
@@ -232,5 +261,34 @@
       </tr>
     </tbody>
   </table>
+
+  <script>
+    // News: show first 5, hide the rest behind a toggle
+    (function () {
+      var items = document.querySelectorAll('#news-list li');
+      var btn = document.getElementById('news-toggle');
+      var LIMIT = 5, open = false;
+      if (items.length <= LIMIT) return;
+      btn.hidden = false;
+      function render() {
+        items.forEach(function (li, i) { li.hidden = !open && i >= LIMIT; });
+        btn.textContent = open ? 'Show less' : 'Show more (' + (items.length - LIMIT) + ')';
+      }
+      btn.addEventListener('click', function () { open = !open; render(); });
+      render();
+    })();
+
+    // Publications: Selected / All filter
+    (function () {
+      var tabs = document.querySelectorAll('.pub-tab');
+      var rows = document.querySelectorAll('tr.pub');
+      function apply(filter) {
+        tabs.forEach(function (t) { t.classList.toggle('active', t.dataset.filter === filter); });
+        rows.forEach(function (r) { r.hidden = filter === 'selected' && r.dataset.selected !== 'true'; });
+      }
+      tabs.forEach(function (t) { t.addEventListener('click', function () { apply(t.dataset.filter); }); });
+      apply('selected');
+    })();
+  </script>
 </body>
 </html>
