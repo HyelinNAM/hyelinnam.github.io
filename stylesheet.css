@@ -162,6 +162,20 @@ h2 {
 }
 
 /* Intro: temporary "open to" note */
+.research-interests {
+  margin: 0 0 14px;
+  padding-left: 20px;
+}
+
+.research-interests li {
+  margin-bottom: 8px;
+  line-height: 1.45;
+}
+
+.research-interests li:last-child {
+  margin-bottom: 0;
+}
+
 .open-to {
   padding: 8px 12px;
   border-left: 3px solid #ffcb05;
